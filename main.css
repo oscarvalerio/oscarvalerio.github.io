@@ -1,18 +1,18 @@
-body{
+body {
     background-color: White;
     color: #495057;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
 /* Styles of the H2*/
-h2{
+h2 {
     text-align: center;
     font-size: 1.5rem;
     font-family: 'Outfit', sans-serif;
 }
 
 /* Styles for the links in the navBar */
-#navbarNav li{
+#navbarNav li {
     color: #14213d;
     font-size: 1.2rem;
     font-weight: 100;
@@ -21,54 +21,80 @@ h2{
 }
 
 /* Styles for the links in the navBar when Hover*/
-#navbarNav a:hover{
+#navbarNav a:hover {
     color: #FCA311;
     font-weight: 400;
-    transition: all 300ms ease-in;
+    transition: all 100ms ease-in;
 }
 
 /* Styles for the Image Logo in the nav bar*/
-#mainNavBar #logo img{
+#mainNavBar #logo img {
     width: 120px;
     height: 100px;
     border-radius: 20%;
-    margin-right: 200px;
+    margin-right: 100px;
+}
+
+
+#contactInfo .row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    background-color: #14213d;
+    font-size: 1.2em;
+    color: #e9ecef;
+    height: 50px;
+    border: 1px solid white;
+}
+
+#contactInfo .row:nth-of-type(2n){
+    background-color: #495057;
+}
+
+#contactInfo a{
+    color: #e9ecef;
 }
 
 /* Styles of the About Me Box*/
-#aboutMe{
-    background-color: #f8f9fa;
+#aboutMe {
+    background: rgb(8,10,19);
+    background: linear-gradient(90deg, rgba(8,10,19,1) 4%, rgba(107,110,119,1) 47%, rgba(7,43,101,1) 91%);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     border: 1px solid #adb5bd;
+    color: #e9ecef;
     border-radius: 15px;
     font-weight: 100;
     line-height: 2.0rem;
 }
 
 /* Styles of the Text Highlighted in About Me Box*/
-#aboutMe .textMark{
+#aboutMe .textMark {
     font-weight: 400;
     font-family: 'Outfit', sans-serif;
     font-size: 1.4rem;
-    color: #023e8a;
+    color: #0096c7;
 }
 
-#professionalExperience{
-    background-color: #f8f9fa;
+#professionalExperience {
+    background: rgb(8,10,19);
+    background: linear-gradient(90deg, rgba(8,10,19,1) 4%, rgba(107,110,119,1) 47%, rgba(7,43,101,1) 91%);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    color: #e9ecef;
     border: 1px solid #adb5bd;
     border-radius: 15px;
     font-weight: 300;
     line-height: 2.0rem;
 }
 
-.textMarkProfessional{
+.textMarkProfessional {
     font-weight: 400;
     font-family: 'Outfit', sans-serif;
     font-size: 1.1rem;
-    color: #023e8a;
+    color: #0096c7;
     margin: 0px 5px;
 }
 
-.textMarkDescription{
+.textMarkDescription {
     font-weight: 100;
     font-family: 'Outfit', sans-serif;
     font-size: 1.2rem;
