@@ -1,5 +1,5 @@
 body {
-    background-color: White;
+    background-image: url('imgs/backg.jpeg');
     color: #495057;
     font-family: 'Roboto Condensed', sans-serif;
 }
@@ -28,7 +28,7 @@ h2 {
 }
 
 /* Styles for the Image Logo in the nav bar*/
-#mainNavBar #logo img {
+#mainNavBar #logo img{
     width: 120px;
     height: 100px;
     border-radius: 20%;
@@ -53,6 +53,22 @@ h2 {
 
 #contactInfo a{
     color: #e9ecef;
+}
+
+/* Styles of the Tools Section */
+#toolsBar .row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #2c2c2b;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+    height: 30px;
+}
+
+#toolsBar img{
+    height: 80%;
+    width: 80%;
 }
 
 /* Styles of the About Me Box*/
@@ -84,6 +100,7 @@ h2 {
     border-radius: 15px;
     font-weight: 300;
     line-height: 2.0rem;
+    margin-top: 25px;
 }
 
 .textMarkProfessional {
