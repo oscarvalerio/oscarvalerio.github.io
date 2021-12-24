@@ -12,10 +12,10 @@ h2 {
 }
 
 /* Styles for the links in the navBar */
-#navbarNav li {
-    color: #14213d;
+#navbarNav a {
+    color: #023e8a;
     font-size: 1.2rem;
-    font-weight: 100;
+    font-weight: 400;
     margin-left: 30px;
     font-family: 'Montserrat', sans-serif;
 }
@@ -60,15 +60,21 @@ h2 {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    color: #2c2c2b;
-    margin-bottom: 5px;
+    color: #14213d;
+    margin-bottom: 25px;
     font-size: 1.2em;
-    height: 30px;
 }
 
 #toolsBar img{
     height: 80%;
     width: 80%;
+}
+
+#toolsBar h2{
+    margin-bottom: 25px;
+    margin-top: 100px;
+    color: #023e8a;
+    font-weight: 400;
 }
 
 /* Styles of the About Me Box*/
