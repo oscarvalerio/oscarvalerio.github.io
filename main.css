@@ -35,6 +35,9 @@ h2 {
     margin-right: 100px;
 }
 
+#contactInfo {
+    margin-top: 60px;
+}
 
 #contactInfo .row {
     display: flex;
@@ -87,6 +90,7 @@ h2 {
     border-radius: 15px;
     font-weight: 100;
     line-height: 2.0rem;
+    margin-top: 60px;
 }
 
 /* Styles of the Text Highlighted in About Me Box*/
