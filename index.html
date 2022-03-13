@@ -5,529 +5,861 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&family=Outfit:wght@100;400&family=Roboto+Condensed:ital,wght@0,300;0,400;1,300&display=swap"
-        rel="stylesheet">
-        
-
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <!-- Custom CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Rajdhani&family=Roboto+Condensed&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="main.css">
     <title>VAGO Testing</title>
 </head>
 
 <body>
-    <div class="container">
-        <!-- Start of the navigation bar -->
-        <nav class="navbar navbar-expand-xl navbar-light" id="mainNavBar">
-            <div class="container-fluid">
-                <!-- START of the logo section -->
-                <div id="logo">
-                    <img src="imgs/logo.jpg" alt="">
-                </div>
-                <!-- END of the logo section -->
 
-                <!-- START of the Hamburguer Menu -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <!-- END of the Hamburguer Menu -->
+    <!-- Beginning of the navigation Bar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light navbarBack">
+        <div class="container-fluid">
+            <!-- Hamburger Menu -->
+            <button class="navbar-toggler buttonMenu" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- End of Hamburger Menu -->
 
-                <!-- START of the Section of Links Menu -->
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#aboutMe">About Me</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#toolsBar">Tools</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#certificationsSection">Certifications</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#educationSection">Education</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#professionalExperience">Experience</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- END of the Section of Links Menu -->
+            <a class="navbar-brand" href="#sectionInfo">
+                <img src="imgs/logo.jpg" alt="" width="70" height="44">
+            </a>
+
+            <!-- Beginning of the navbar elements -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li>
+                        <a href="#toolSection">Tools</a>
+                    </li>
+                    <li>
+                        <a href="#programmingSection">Programming Languages</a>
+                    </li>
+                    <li>
+                        <a href="#educationInfo">Education</a>
+                    </li>
+                    <li>
+                        <a href="#experienceInfo">Experience</a>
+                    </li>
+                    <li>
+                        <a href="#footerSection">Contact</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-        <!-- END of the navigation bar -->
-    </div>
+            <!-- End of the navbar elements -->
+        </div>
+    </nav>
+    <!-- End of the navigation Bar -->
 
-    <section>
-        <div class="container-fluid mx-auto ">
-            <div class="row d-flex justify-content-around mw-80">
-                <!-- Start of the Contact Me section -->
-                <div class="col-lg-3" id="contactInfo" >
-                    <h2>Contact Me</h2>
-                    <!-- Start of the Email info -->
-                    <div class="row">
-                        <div class="col">
-                            <div class="d-flex justify-content-center align-items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-envelope-check" viewBox="0 0 16 16">
-                                    <path
-                                        d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z" />
-                                    <path
-                                        d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-1.993-1.679a.5.5 0 0 0-.686.172l-1.17 1.95-.547-.547a.5.5 0 0 0-.708.708l.774.773a.75.75 0 0 0 1.174-.144l1.335-2.226a.5.5 0 0 0-.172-.686Z" />
-                                </svg>
-                                &nbsp &nbsp
-                                <a href="mailto:oscarvalerio@gmail.com">oscarvalerio@gmail.com</a>
-                            </div>
-                        </div>
+    <!-- Beginning of the General Info section -->
+    <section id="sectionInfo">
+        <div id="introInfo" class="containerFluid">
+            <div class="row align-items-center pb-5 pt-4" id="introRow">
+                <div class="col-md-2 d-none d-md-block"></div>
+                <!-- Beginning of the VAGO Text section -->
+                <div class="col-md-6 align-items-center flex-column">
+                    <div>
+                        <span class="introCapital">VA</span>lerio
                     </div>
-                    <!-- End of the Email info -->
-
-                    <!-- Start of the Phone Number info -->
-                    <div class="row">
-                        <div class="col">
-                            <div class="d-flex justify-content-center align-items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-phone-fill" viewBox="0 0 16 16">
-                                    <path
-                                        d="M3 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V2zm6 11a1 1 0 1 0-2 0 1 1 0 0 0 2 0z" />
-                                </svg>
-                                &nbsp &nbsp
-                                <a href="tel:+52 4492226729">+52 449-222-6729</a>
-                            </div>
-                        </div>
+                    <div>
+                        <span class="introCapital">G</span>omez
                     </div>
-                    <!-- END of the Phone Number info -->
-
-                    <!-- Start of Github profile info -->
-                    <div class="row">
-                        <div class="col">
-                            <div class="d-flex justify-content-center align-items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                                  </svg>
-                                &nbsp &nbsp
-                                <a href="https://github.com/oscarvalerio/">GitHub Profile</a>
-                            </div>
-                        </div>
+                    <div>
+                        <span class="introCapital">O</span>scar
                     </div>
-                    <!-- END of the Github profile info -->
-
-                    <!-- Start of Linkedin info -->
-                    <div class="row">
-                        <div class="col">
-                            <div class="d-flex justify-content-center align-items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-                                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-                                  </svg>
-                                &nbsp &nbsp
-                                <a href="https://www.linkedin.com/in/oscar-valerio/">Linkedin Profile</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END of the Linkedin info -->
+                    <div class="introSkills"> TESTING </div>
+                    <div class="introExtendedSkills"> Manual, Automation, Load/Performance, Test Management </div>
                 </div>
-                <!-- END of the Contact me section -->
-                
-
-                <!-- Start of the about me section -->
-                <div class="col-lg-7" id="aboutMe">
-                    <h2 class="my-3">About Me</h2>
-                    <p class="px-4"> <span class="textMark">Va</span>lerio <span class="textMark">G</span>omez <span
-                            class="textMark">O</span>scar is the Software Test Engineer behind <span class="textMark">
-                            VAGO Testing</span>,
-                        Working as Software Tester, I started back in 2005 as manual tester, after that, it has been a
-                        long but funny road by different areas of the Software Quality
-                        Assurance area.
-                        My experience is mainly with Automation Test Tools like Selenium, UFT, and Appium, but I also
-                        have experience
-                        with other areas of testing like Performance Testing (LoadRunner), API testing (PostMan, SOAP
-                        UI),
-                        Security Testing,
-                        and Test Management.
-                        The goal for this site will be to create a place to explore automation for spanish speakers mainly
-                        but having a centralized place
-                        to share knowledge.
-                    </p>
-                </div>
-                <!-- END of the about me section -->
-            </div>
-
-            <!-- START of the Profesional Experience Section -->
-            <div class="row d-flex justify-content-around mt-5 mw-80">
-                <!-- START of the tools section -->
-                <div class="col-lg-3" id="toolsBar" >
-                    <h2>Tools</h2>
-                    <!-- Start of Selenium Tool -->
-                    <div class="row">
-                        <div class="col-2">
-                            <div class="d-flex justify-content-center align-items-center">
-                                <img src="imgs/Tools/selenium.png" alt="">
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="d-flex">
-                                Selenium
-                            </div>
-                        </div>
-
-                        <div class="col-2">
-                            <div class="d-flex justify-content-center align-items-center">
-                                <img src="imgs/Tools/appium.jpeg" alt="">
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="d-flex">
-                                Appium
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END of Selenium Tool -->
-
-
-                    <!-- Start of UFT Tool -->
-                    <div class="row">
-                        <div class="col-2">
-                            <div class="d-flex justify-content-center align-items-center">
-                                <img src="imgs/Tools/uft.png" alt="">
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="d-flex">
-                                UFT
-                            </div>
-                        </div>
-
-                        <div class="col-2">
-                            <div class="d-flex justify-content-center align-items-center">
-                                <img src="imgs/Tools/loadrunner.png" alt="">
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="d-flex">
-                                LoadRunner
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END of UFT Tool -->
-
-                    <!-- Start of Github Tool -->
-                    <div class="row">
-                        <div class="col-2">
-                            <div class="d-flex justify-content-center align-items-center">
-                                <img src="imgs/Tools/github.png" alt="">
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="d-flex">
-                                GitHub
-                            </div>
-                        </div>
-
-                        <div class="col-2">
-                            <div class="d-flex justify-content-center align-items-center">
-                                <img src="imgs/Tools/alm.jpeg" alt="">
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="d-flex">
-                                ALM
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END of Github Tool -->
-
-                    <!-- START of the Technologies section -->
-                    <h2>Programming Languages</h2>
-                    <!-- Start of Java Tool -->
-                    <div class="row">
-                        <div class="col-2">
-                            <div class="d-flex justify-content-center align-items-center">
-                                <img src="imgs/Tools/java.png" alt="">
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="d-flex">
-                                Java
-                            </div>
-                        </div>
-
-                        <div class="col-2">
-                            <div class="d-flex justify-content-center align-items-center">
-                                <img src="imgs/Tools/javascript.png" alt="">
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="d-flex">
-                                JavaScript
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END of Java Tool -->
-                 <!-- END of the Technologies section -->
-
-                  <!-- START of the Certifications section -->
-                  <div id="certificationsSection">
-                    <h2>Certifications</h2>
-                  </div>
-                  <!-- Start of Certificate Selenium Tool -->
-                  <div class="row">
-                      <div class="col-2">
-                          <div class="d-flex justify-content-center align-items-center">
-                              <img src="imgs/istqi.png" alt="">
-                          </div>
-                      </div>
-                      <div class="col-4">
-                          <div class="d-flex">
-                            A4Q Certified Selenium Tester Foundation - iSQI Group - Aug 2021
-                          </div>
-                      </div>
-
-                      <div class="col-2">
-                          <div class="d-flex justify-content-center align-items-center">
-                              <img src="imgs/brainbench.gif" alt="">
-                          </div>
-                      </div>
-                      <div class="col-4">
-                          <div class="d-flex">
-                            Software Testing – Brainbench - Mar 2010
-                          </div>
-                      </div>
-                  </div>
-                  <!-- END of Certificate Selenium Tool -->
-               <!-- END of the Certifications section -->
-
-                <!-- START of the Education section -->
-                <div id="educationSection">
-                    <h2>Education</h2>
-                </div>
-                
-        
-                <div class="row">
-                    <div class="col-3">
-                        <div class="d-flex justify-content-center align-items-center">
-                            <img src="imgs/udg.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-9">
-                        <div class="d-flex">
-                            Bachelor in Computer Engineering<br>
-                            Universidad de Guadalajara <br>
-                            2000- 2004 &nbsp &nbsp
-                        </div>
-                    </div>
-                </div>
-            
-             <!-- END of the Education section -->
-               
-                    
-                </div>
-                <!-- END of the tools section -->
-
-                 
-
-                <!-- Start of the Professional Experience section -->
-                <div class="col-lg-7" id="professionalExperience">
-                    <h2 class="my-3">Professional Experience</h2>
-                    <!-- START of the first company section -->
-                    <div class="row d-flex flex-column flex-lg-row justify-content-start">
-                        <div class="col-lg-4">
-                            <span class="textMarkProfessional">Company: </span>
-                            <span class="textMarkDescription">Dexcom</span>
-                        </div>
-                        <div class="col-lg-4">
-                            <span class="textMarkProfessional">Role: </span>
-                            <span class="textMarkDescription">Sr. Automation Tester</span>
-                        </div>
-                        <div class="col-lg-4">
-                            <span class="textMarkProfessional">From: </span>
-                            <span class="textMarkDescription">07/20</span>
-                            <span class="textMarkProfessional">To: </span>
-                            <span class="textMarkDescription">Actual Date</span>
-                        </div>
-                    </div>
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-10">
-                            I’m working as automation tester for healthcare company, running automation tests in
-                            different platforms and devices.
-                            Working on agile methodology, for development of scripts to test native mobile applications
-                            for Android and iOS.
-                            Working on a Testing framework that includes CI with Jenkins and Code Management with
-                            GitHub, the framework also supports the inclusion of JUnit
-
-                        </div>
-                    </div>
-                    <!-- END of the first company section -->
-
-                    <!-- START of the second company section -->
-                    <div class="row mt-5 d-flex flex-column flex-lg-row justify-content-start">
-                        <div class="col-lg-4">
-                            <span class="textMarkProfessional">Company: </span>
-                            <span class="textMarkDescription">Capgemini</span>
-                        </div>
-                        <div class="col-lg-4">
-                            <span class="textMarkProfessional">Role: </span>
-                            <span class="textMarkDescription">Sr. QA Consultant</span>
-                        </div>
-                        <div class="col-lg-4">
-                            <span class="textMarkProfessional">From: </span>
-                            <span class="textMarkDescription">09/15</span>
-                            <span class="textMarkProfessional">To: </span>
-                            <span class="textMarkDescription">07/20</span>
-                        </div>
-                    </div>
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-10">
-                            I’m working as test leader of a Quality Assurance and Testing project for one of the largest
-                            Telecomm companies in United States.
-                            Main responsibilities are focused on the analysis, execution and reporting for Test Cases on
-                            different phases of Testing Lifecycle (requirements gathering, Test cases creation /
-                            execution, defect management, etc.).
-                            Working on automation initiatives using HP ALM tool for functional and regression testing.
-
-
-                        </div>
-                    </div>
-                    <!-- END of the second company section -->
-
-                    <!-- START of the Third company section -->
-                    <div class="row mt-5 d-flex flex-column flex-lg-row justify-content-start">
-                        <div class="col-lg-4">
-                            <span class="textMarkProfessional">Company: </span>
-                            <span class="textMarkDescription">Softtek</span>
-                        </div>
-                        <div class="col-lg-4">
-                            <span class="textMarkProfessional">Role: </span>
-                            <span class="textMarkDescription">Sr. QA Consultant</span>
-                        </div>
-                        <div class="col-lg-4">
-                            <span class="textMarkProfessional">From: </span>
-                            <span class="textMarkDescription">06/10</span>
-                            <span class="textMarkProfessional">To: </span>
-                            <span class="textMarkDescription">09/15</span>
-                        </div>
-                    </div>
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-10">
-                            I also have automation activities both Performance and Functional; I worked with different
-                            tools like Quality Center, Quick Test Professional, Performance Center, and ALM.
-
-                            I’m responsible for the improvement in Quality Assurance process and author of a new
-                            Automation Framework and Environment Matrix document.
-                            Direct responsible of providing status to different customers and managers, working with
-                            different technical teams on several different technologies and business areas.
-                        </div>
-                    </div>
-                    <!-- END of the Third company section -->
-
-                    <!-- START of the Fourth company section -->
-                    <div class="row mt-5 d-flex flex-column flex-lg-row justify-content-start">
-                        <div class="col-lg-4">
-                            <span class="textMarkProfessional">Company: </span>
-                            <span class="textMarkDescription">Tiempo Dev.</span>
-                        </div>
-                        <div class="col-lg-4">
-                            <span class="textMarkProfessional">Role: </span>
-                            <span class="textMarkDescription">Automation Test Leader</span>
-                        </div>
-                        <div class="col-lg-4">
-                            <span class="textMarkProfessional">From: </span>
-                            <span class="textMarkDescription">10/09</span>
-                            <span class="textMarkProfessional">To: </span>
-                            <span class="textMarkDescription">06/10</span>
-                        </div>
-                    </div>
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-10">
-                            Lead of the Automation Team, my job is to coordinate the automation testing process. This
-                            process includes Use Cases Design, Automation Plan Creation, Time Estimation, and constant
-                            Tester-Client-Developer communication.
-                            Leading a team formed by 4 persons and focused on development of test scripts for new
-                            projects, we are also responsible to conduct regression testing with QTP scripts and defect
-                            processing.
-
-                        </div>
-                    </div>
-                    <!-- END of the Fourth company section -->
-
-                    <!-- START of the Fifth company section -->
-                    <div class="row mt-5 d-flex flex-column flex-lg-row justify-content-start">
-                        <div class="col-lg-4">
-                            <span class="textMarkProfessional">Company: </span>
-                            <span class="textMarkDescription">Softtek</span>
-                        </div>
-                        <div class="col-lg-4">
-                            <span class="textMarkProfessional">Role: </span>
-                            <span class="textMarkDescription">Test Team Leader</span>
-                        </div>
-                        <div class="col-lg-4">
-                            <span class="textMarkProfessional">From: </span>
-                            <span class="textMarkDescription">02/08</span>
-                            <span class="textMarkProfessional">To: </span>
-                            <span class="textMarkDescription">10/09</span>
-                        </div>
-                    </div>
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-10">
-                            Leader of the Quality Assurance team inside Penske Logistics project, I could work directly
-                            with International (USA, Europe, and China) customers. I’ve been part of the implementation
-                            of a new Quality Assurance model for the customer, leading the design since the assessment
-                            phase until implementing the QA process.
-
-                            I am direct responsible to coordinate a team formed by 5 persons (4 located in Mexico and 2
-                            Located in China) and this activity gave me the opportunity to coordinate international team
-                            members. I was direct responsible for implementing and reviewing the daily use of a test
-                            model based on standards like CMMI and SSTP.
-                        </div>
-                    </div>
-                    <!-- END of the Fifth company section -->
-
-                    <!-- START of the Sixth company section -->
-                    <div class="row mt-5 d-flex flex-column flex-lg-row justify-content-start">
-                        <div class="col-lg-4">
-                            <span class="textMarkProfessional">Company: </span>
-                            <span class="textMarkDescription">IBM</span>
-                        </div>
-                        <div class="col-lg-4">
-                            <span class="textMarkProfessional">Role: </span>
-                            <span class="textMarkDescription">Software Tester</span>
-                        </div>
-                        <div class="col-lg-4">
-                            <span class="textMarkProfessional">From: </span>
-                            <span class="textMarkDescription">01/06</span>
-                            <span class="textMarkProfessional">To: </span>
-                            <span class="textMarkDescription">02/08</span>
-                        </div>
-                    </div>
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-10">
-                            I worked as a specialist of testing design, worked on Internal and external projects for
-                            IBM; I was part of projects like IBM store for Europe and Grupo Modelo Company.
-
-                            I used different test tools like Rational Suite, UVATS and Test Director. Resides these
-                            activities I worked with other administrative software like Microsoft Suite and Lotus Notes
-                            programs.
-
-                        </div>
-                    </div>
-                    <!-- END of the Sixth company section -->
-
-                </div>
-                <!-- END of the about me section -->
+                <!-- END of the VAGO Text section -->
             </div>
         </div>
     </section>
+    <!-- END of the General Info section -->
 
+    <!-- Beginning of the About Me section -->
+    <section>
+        <div id="aboutInfo" class="containerFluid">
+            <div class="row d-flex flex-row align-items-center justify-content-end" id="aboutRow">
+                <h2 class="sectionTitle" id="aboutTitle">About Me</h2>
+                <!-- Beginning of the image of About Me -->
+                <div class="col-md-3 d-none d-md-block p-0">
+                    <img src="imgs/programmer.jpg" alt="" class="imgAbout">
+                </div>
+                <!-- END of the image of About Me -->
+                <div class="col-md-1 d-none d-md-block"></div>
+                <!-- Beginning of the About Me Text section -->
+                <div class="col-md-6">
+                    <div>
+                        <span class="aboutHighlight"> Valerio Gomez Oscar</span> is the Software Test Engineer behind
+                        <span class="aboutHighlight"> VAGO Testing</span>, Working as Software
+                        Tester, started back in <span class="aboutHighlight"> 2005</span> as manual tester, after that,
+                        it has been a long but funny road
+                        by different areas of the Software Quality Assurance area like Automation, Performance, Test
+                        Management, Security Testing and a bunch of Test Management.
+                        <br>
+                        <br>
+                        <div class="aboutHighlight">Keep scrolling down if you want to know me better!!</div>
+                    </div>
+                </div>
+                <div class="col-md-1 d-none d-md-block"></div>
+                <!-- END of the VAGO Text section -->
+            </div>
+        </div>
+    </section>
+    <!-- END of the About Me section -->
+
+    <!-- Beginning of the tools section -->
+    <section id="toolContainer">
+        <div id="toolSection" class="container">
+            <h2 class="sectionTitle">Tools</h2>
+
+            <!-- Beginning of the first row of tools -->
+            <div class="row align-items-center">
+                <div class="col-md-1 toolOption d-none d-md-block"></div>
+                <!-- Beginning of the selenium tool -->
+                <div class="col-md-3 toolOption align-items-center toolBorder pt-3 pb-3">
+                    <img src="imgs/Tools/selenium.png" alt="" class="toolLogo">
+                    <h3 class="toolTitle">Selenium</h3>
+                    <div>
+                        <div class="mb-3 toolText">
+                            Level of Expertise:
+                        </div>
+                        <div class="mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill goodExp" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill goodExp" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill goodExp" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill goodExp" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star" viewBox="0 0 16 16">
+                                <path
+                                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                            </svg>
+                        </div>
+                        <div class="mb-3 toolExp">
+                            Beginner - Expert
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Selenium Tool -->
+
+                <div class="col-md-1 toolOption d-none d-md-block"></div>
+
+                <!-- Beginning of Appium Tool -->
+                <div class="col-md-3 toolOption align-items-center toolBorder pt-3 pb-3">
+                    <img src="imgs/Tools/appium.png" alt="" class="toolLogo">
+                    <h3 class="toolTitle">Appium</h3>
+                    <div>
+                        <div class="mb-3 toolText">
+                            Level of Expertise:
+                        </div>
+                        <div class="mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill goodExp" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill goodExp" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill goodExp" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star" viewBox="0 0 16 16">
+                                <path
+                                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star" viewBox="0 0 16 16">
+                                <path
+                                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                            </svg>
+                        </div>
+                        <div class="mb-3 toolExp">
+                            Beginner - Expert
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Appium Tool -->
+                <div class="col-md-1 toolOption d-none d-md-block"></div>
+                <!-- Beginning of UFT Tool -->
+                <div class="col-md-3 toolOption align-items-center toolBorder pt-3 pb-3">
+                    <img src="imgs/Tools/uft.png" alt="" class="toolLogo">
+                    <h3 class="toolTitle">UFT</h3>
+                    <div>
+                        <div class="mb-3 toolText">
+                            Level of Expertise:
+                        </div>
+                        <div class="mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill goodExp" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill goodExp" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill goodExp" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill goodExp" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star" viewBox="0 0 16 16">
+                                <path
+                                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                            </svg>
+                        </div>
+                        <div class="mb-3 toolExp">
+                            Beginner - Expert
+                        </div>
+                    </div>
+                </div>
+                <!-- End of UFT Tool -->
+            </div>
+            <!-- End of the first row of tools -->
+
+
+            <!-- Beginning of the second row of tools -->
+            <div class="row align-items-center mt-5 pb-5">
+                <div class="col-md-1 toolOption d-none d-md-block"></div>
+                <!-- Beginning of the LoadRunner tool -->
+                <div class="col-md-3 toolOption align-items-center toolBorder pt-3 pb-3">
+                    <img src="imgs/Tools/loadrunner.png" alt="" class="toolLogo">
+                    <h3 class="toolTitle">LoadRunner</h3>
+                    <div>
+                        <div class="mb-3 toolText">
+                            Level of Expertise:
+                        </div>
+                        <div class="mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill goodExp" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill goodExp" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill goodExp" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star" viewBox="0 0 16 16">
+                                <path
+                                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star" viewBox="0 0 16 16">
+                                <path
+                                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                            </svg>
+                        </div>
+                        <div class="mb-3 toolExp">
+                            Beginner - Expert
+                        </div>
+                    </div>
+                </div>
+                <!-- End of LoadRunner Tool -->
+
+                <div class="col-md-1 toolOption d-none d-md-block"></div>
+
+                <!-- Beginning of GitHub Tool -->
+                <div class="col-md-3 toolOption align-items-center toolBorder pt-3 pb-3">
+                    <img src="imgs/Tools/github.png" alt="" class="toolLogo">
+                    <h3 class="toolTitle">GitHub</h3>
+                    <div>
+                        <div class="mb-3 toolText">
+                            Level of Expertise:
+                        </div>
+                        <div class="mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill goodExp" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill goodExp" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill goodExp" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star" viewBox="0 0 16 16">
+                                <path
+                                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star" viewBox="0 0 16 16">
+                                <path
+                                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                            </svg>
+                        </div>
+                        <div class="mb-3 toolExp">
+                            Beginner - Expert
+                        </div>
+                    </div>
+                </div>
+                <!-- End of GitHub Tool -->
+                <div class="col-md-1 toolOption d-none d-md-block"></div>
+                <!-- Beginning of ALM Tool -->
+                <div class="col-md-3 toolOption align-items-center toolBorder pt-3 pb-3">
+                    <img src="imgs/Tools/alm.png" alt="" class="toolLogo">
+                    <h3 class="toolTitle">ALM</h3>
+                    <div>
+                        <div class="mb-3 toolText">
+                            Level of Expertise:
+                        </div>
+                        <div class="mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill goodExp" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill goodExp" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill goodExp" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill goodExp" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill goodExp" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                        </div>
+                        <div class="mb-3 toolExp">
+                            Beginner - Expert
+                        </div>
+                    </div>
+                </div>
+                <!-- End of UFT Tool -->
+            </div>
+            <!-- End of the second row of tools -->
+
+        </div>
+    </section>
+    <!-- End of the tools section -->
+
+
+    <!-- Beginning of the Programming Languages section -->
+    <section id="programmingContainer">
+        <div id="programmingSection" class="container">
+            <h2 class="sectionTitle">Programming Languages</h2>
+
+            <!-- Beginning of the first row of tools -->
+            <div class="row align-items-center">
+                <div class="col-md-3 toolOption d-none d-md-block"></div>
+                <!-- Beginning of the Java Language -->
+                <div class="col-md-3 toolOption programmingBorder align-items-center">
+                    <img src="imgs/Tools/java.png" alt="" class="toolLogo">
+                    <h3 class="toolTitle">Java</h3>
+                    <div>
+                        <div class="mb-3 toolText">
+                            Level of Expertise:
+                        </div>
+                        <div class="mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill goodExp" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill goodExp" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill goodExp" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill goodExp" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star" viewBox="0 0 16 16">
+                                <path
+                                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                            </svg>
+                        </div>
+                        <div class="mb-3 toolExp">
+                            Beginner - Expert
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Java Language -->
+
+                <div class="col-md-1 toolOption d-none d-md-block"></div>
+
+                <!-- Beginning of JavaScript Tool -->
+                <div class="col-md-3 toolOption programmingBorder align-items-center">
+                    <img src="imgs/Tools/javascript.png" alt="" class="toolLogo">
+                    <h3 class="toolTitle">JavaScript</h3>
+                    <div>
+                        <div class="mb-3 toolText">
+                            Level of Expertise:
+                        </div>
+                        <div class="mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill goodExp" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill goodExp" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill goodExp" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star" viewBox="0 0 16 16">
+                                <path
+                                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star" viewBox="0 0 16 16">
+                                <path
+                                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                            </svg>
+                        </div>
+                        <div class="mb-3 toolExp">
+                            Beginner - Expert
+                        </div>
+                    </div>
+                </div>
+                <!-- End of JavaScript Tool -->
+            </div>
+            <!-- End of the first row of tools -->
+
+
+
+            <!-- Beginning of the Second row of tools -->
+            <div class="row align-items-center">
+                <div class="col-md-3 toolOption d-none d-md-block"></div>
+                <!-- Beginning of the HTML Language -->
+                <div class="col-md-3 toolOption programmingBorder align-items-center">
+                    <img src="imgs/Tools/html.png" alt="" class="toolLogo">
+                    <h3 class="toolTitle">HTML</h3>
+                    <div>
+                        <div class="mb-3 toolText">
+                            Level of Expertise:
+                        </div>
+                        <div class="mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill goodExp" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill goodExp" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill goodExp" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill goodExp" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star" viewBox="0 0 16 16">
+                                <path
+                                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                            </svg>
+                        </div>
+                        <div class="mb-3 toolExp">
+                            Beginner - Expert
+                        </div>
+                    </div>
+                </div>
+                <!-- End of HTML Language -->
+
+                <div class="col-md-1 toolOption d-none d-md-block"></div>
+
+                <!-- Beginning of CSS Tool -->
+                <div class="col-md-3 toolOption programmingBorder align-items-center">
+                    <img src="imgs/Tools/css.png" alt="" class="toolLogo">
+                    <h3 class="toolTitle">CSS</h3>
+                    <div>
+                        <div class="mb-3 toolText">
+                            Level of Expertise:
+                        </div>
+                        <div class="mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill goodExp" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill goodExp" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill goodExp" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star" viewBox="0 0 16 16">
+                                <path
+                                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star" viewBox="0 0 16 16">
+                                <path
+                                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                            </svg>
+                        </div>
+                        <div class="mb-3 toolExp">
+                            Beginner - Expert
+                        </div>
+                    </div>
+                </div>
+                <!-- End of CSS Tool -->
+            </div>
+            <!-- End of the Second row of tools -->
+
+        </div>
+    </section>
+    <!-- End of the Programming Languages section -->
+
+    <!-- Beginning of the Education and Certifications section -->
+    <section>
+        <div id="educationInfo" class="containerFluid">
+            <h2 id="educationTitle">Education and Certifications</h2>
+            <div class="row align-items-center" id="educationRow">
+                <div class="col-md-1 d-none d-md-block"></div>
+                <!-- Beginning of the University section -->
+                <div class="col-md-6 align-items-center flex-column">
+                    <!-- beginning of the UdeG Row -->
+                    <div class="row align-items-center universityRow">
+                        <div class="col-md-6 align-items-center flex-column universityData">
+                            <h3>Bachelor in Computer Engineering</h3>
+                            <div>
+                                Universidad de Guadalajara <br>
+                                2000- 2004
+                            </div>
+                        </div>
+                        <div class="col-2 d-md-block mt-3">
+                            <img src="imgs/udg.png" alt="" class="universityImage">
+                        </div>
+                    </div>
+                    <!-- End of the UdeG Row -->
+
+                    <!-- Beginning of the Automation Certification Row -->
+                    <div class="row align-items-center universityRow">
+                        <div class="col-md-6 align-items-center flex-column universityData">
+                            <h3>A4Q Certified Selenium Tester Foundation</h3>
+                            <div>
+                                iSQI Group <br>
+                                August 2021
+                            </div>
+                        </div>
+                        <div class="col-2 d-md-block mt-3">
+                            <img src="imgs/istqi.png" alt="" class="universityImage">
+                        </div>
+                    </div>
+                    <!-- End of the Automation Certification Row -->
+
+                    <!-- Beginning of the Tester Certification Row -->
+                    <div class="row align-items-center universityRow">
+                        <div class="col-md-6 align-items-center flex-column universityData">
+                            <h3>Software Testing</h3>
+                            <div>
+                                Brainbench <br>
+                                March 2010
+                            </div>
+                        </div>
+                        <div class="col-2 d-md-block mt-3">
+                            <img src="imgs/brainbench.gif" alt="" class="universityImage">
+                        </div>
+                    </div>
+                    <!-- End of the Tester Certification Row -->
+
+                </div>
+                <!-- END of the University section -->
+                <div class="col-md-1 d-none d-md-block"></div>
+                <div class="col-md-3 d-none d-md-block">
+                    <img src="imgs/education.jpg" alt="" id="imgEducation" class="imguniversity">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END of the Education and Certifications section -->
+
+    <!-- Beginning of the Work Experience section -->
+    <section>
+        <div id="experienceInfo" class="containerFluid">
+            <h2 id="experienceTitle" class="sectionTitle">Professional Experience</h2>
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="col-2">
+                    <img src="imgs/companies/companies.jpg" alt="" id="imgEducation" class="imgExperience">
+                </div>
+                <div class="col-9">
+                    <div class="row align-items-center pb-5 pt-4" id="experienceRow">
+                        <div class="col-md-2 d-none d-md-block"></div>
+                        <!-- Beginning of the Dexcom Text section -->
+                        <div class="col-md-9 align-items-center flex-column">
+                            <div class="row d-flex flex-row-reverse align-items-start experienceRow">
+                                <div class="col-md-5 d-flex flex-column  justify-content-end experienceData">
+                                    <h3 class="text-end">Sr. Automation Tester</h3>
+                                    <div class="text-end">
+                                        Dexcom <br>
+                                        July 2020- Current Job
+                                    </div>
+                                </div>
+                                <div class="col-2 d-md-block mt-3">
+                                    <img src="imgs/companies/dexcom.jpeg" alt="" class="universityImage">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END of the Dexcom Text section -->
+
+                        <!-- Beginning of the Capgemini Text section -->
+                        <div class="col-md-2 d-none d-md-block"></div>
+                        <div class="col-md-9 align-items-center flex-column ">
+
+                            <div class="row d-flex flex-row-reverse align-items-start experienceRow">
+                                <div class="col-md-5 d-flex flex-column  justify-content-end experienceData">
+                                    <h3 class="text-end">Sr. QA Consultant</h3>
+                                    <div class="text-end">
+                                        Capgemini <br>
+                                        September 2015- July 2020
+                                    </div>
+                                </div>
+                                <div class="col-2 d-md-block mt-3">
+                                    <img src="imgs/companies/cap.png" alt="" class="universityImage">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END of the Capgemini Text section -->
+
+                        <!-- Beginning of the Softtek Text section -->
+                        <div class="col-md-2 d-none d-md-block"></div>
+                        <div class="col-md-9 align-items-center flex-column ">
+
+                            <div class="row d-flex flex-row-reverse align-items-start experienceRow">
+                                <div class="col-md-5 d-flex flex-column  justify-content-end experienceData">
+                                    <h3 class="text-end">Sr. QA Consultant</h3>
+                                    <div class="text-end">
+                                        Softtek <br>
+                                        June 2010- September 2015
+                                    </div>
+                                </div>
+                                <div class="col-2 d-md-block mt-3">
+                                    <img src="imgs/companies/softtek.png" alt="" class="universityImage">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END of the Softtek Text section -->
+
+
+                        <!-- Beginning of the Tiempo Text section -->
+                        <div class="col-md-2 d-none d-md-block"></div>
+                        <div class="col-md-9 align-items-center flex-column ">
+
+                            <div class="row d-flex flex-row-reverse align-items-start experienceRow">
+                                <div class="col-md-5 d-flex flex-column  justify-content-end experienceData">
+                                    <h3 class="text-end">Automation Test Leader</h3>
+                                    <div class="text-end">
+                                        Tiempo Development <br>
+                                        October 2009 - June 2010
+                                    </div>
+                                </div>
+                                <div class="col-2 d-md-block mt-3">
+                                    <img src="imgs/companies/tiempo.jpeg" alt="" class="universityImage">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END of the Tiempo Text section -->
+
+
+                        <!-- Beginning of the Softtek Text section -->
+                        <div class="col-md-2 d-none d-md-block"></div>
+                        <div class="col-md-9 align-items-center flex-column ">
+
+                            <div class="row d-flex flex-row-reverse align-items-start experienceRow">
+                                <div class="col-md-5 d-flex flex-column  justify-content-end experienceData">
+                                    <h3 class="text-end">Testing Team Leader</h3>
+                                    <div class="text-end">
+                                        Softtek <br>
+                                        February 2008 - October 2009
+                                    </div>
+                                </div>
+                                <div class="col-2 d-md-block mt-3">
+                                    <img src="imgs/companies/softtek.png" alt="" class="universityImage">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END of the Softtek Text section -->
+
+                        <!-- Beginning of the Softtek Text section -->
+                        <div class="col-md-2 d-none d-md-block"></div>
+                        <div class="col-md-9 align-items-center flex-column ">
+
+                            <div class="row d-flex flex-row-reverse align-items-start experienceRow">
+                                <div class="col-md-5 d-flex flex-column  justify-content-end experienceData">
+                                    <h3 class="text-end">Software Tester</h3>
+                                    <div class="text-end">
+                                        IBM <br>
+                                        January 2006 - February 2008
+                                    </div>
+                                </div>
+                                <div class="col-2 d-md-block mt-3">
+                                    <img src="imgs/companies/ibm.png" alt="" class="universityImage">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END of the Softtek Text section -->
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!-- END of the Work Experience section -->
+
+    <!-- Beginning of the footer section -->
+    <footer id="footerSection">
+        <div id="footerDiv" class="containerFluid">
+            <div class="row pb-5 pt-4" id="footerRow">
+                <h4>Contact me:</h4>
+                <div class="col-md-12 flex-column">
+                    If you want to know even more, contact me:
+                </div>
+                <div id="footerIcons" class="d-flex justify-content-end">
+                    <!-- Email Icon -->
+                    <span class="socialIcon">
+                        <a href="mailto:oscarvalerio@gmail.com">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor"
+                                class="bi bi-envelope" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                            </svg>
+                        </a>
+                    </span>
+
+                    <!-- Phone number icon -->
+                    <span class="socialIcon">
+                        <a href="tel:+52 4492226729">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
+                                class="bi bi-telephone-plus-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511zM12.5 1a.5.5 0 0 1 .5.5V3h1.5a.5.5 0 0 1 0 1H13v1.5a.5.5 0 0 1-1 0V4h-1.5a.5.5 0 0 1 0-1H12V1.5a.5.5 0 0 1 .5-.5z" />
+                            </svg>
+                        </a>
+                    </span>
+
+                    <!-- gitHub icon -->
+                    <span class="socialIcon">
+                        <a href="https://github.com/oscarvalerio/">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
+                                class="bi bi-github" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                            </svg>
+                        </a>
+                    </span>
+
+                    <!-- Linkedin Icon -->
+                    <span class="socialIcon">
+                        <a href="https://www.linkedin.com/in/oscar-valerio/">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
+                                class="bi bi-linkedin" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                            </svg>
+                    </span>
+                    </a>
+
+                    <span class="socialIcon">
+                        <a href="https://twitter.com/kornelioreyna">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
+                                class="bi bi-twitter" viewBox="0 0 16 16">
+                                <path
+                                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                            </svg>
+                        </a>
+                    </span>
+
+
+                </div>
+                <!-- END of the VAGO Text section -->
+            </div>
+        </div>
+    </footer>
+
+    <!-- End of the footer section -->
+
+
+    <!-- Beginning of the boostrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+    <!-- End of the boostrap JS -->
 </body>
 
 </html>

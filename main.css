@@ -1,128 +1,289 @@
 body {
-    background-image: url('imgs/backg.jpeg');
-    color: #495057;
+    padding-top: 45px;
+}
+
+section {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbarBack{
+    background-color: white;
+}
+
+#introInfo {
     font-family: 'Roboto Condensed', sans-serif;
+    font-size: 3em;
+    color: white;
 }
 
-/* Styles of the H2*/
-h2 {
+#introRow {
+    background-image: url("imgs/carousel.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.introCapital {
+    margin-right: 8px;
+    color: #00b4d8;
+    font-size: 1.2em;
+}
+
+.introSkills {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 0.6em;
+    margin-top: 30px;
+}
+
+.introExtendedSkills {
+    font-size: 0.5em;
+}
+
+/* End of Intro classes */
+
+/* Start of the About me Classes */
+#aboutRow {
+    font-family: 'Rajdhani', sans-serif;
+    background-color: white;
+    font-size: 1.2em;
+    line-height: 200%;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.aboutHighlight {
+    font-size: 1.3em;
+    font-weight: 800;
+    color: #b5179e;
+    font-family: 'Comfortaa', cursive;
+}
+
+#aboutTitle {
+    color: #560bad;
+    font-size: 2.3em;
+    font-family: 'Comfortaa', cursive;
+}
+
+.imgAbout {
+    width: 100%;
+    height: 100%;
+    padding-left: 0;
+    transform: rotate(12deg);
+    box-shadow: 35px 25px 13px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 35px 25px 13px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 35px 25px 13px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 45px 45px 45px 45px;
+}
+
+/* End of the about section */
+
+#navbarSupportedContent a {
+    color: #6c757d;
+    font-family: 'Comfortaa', cursive;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+
+#navbarSupportedContent li{
+    margin-right: 50px;
+}
+
+.sectionTitle {
+    font-family: 'Rajdhani', sans-serif;
     text-align: center;
-    font-size: 1.5rem;
-    font-family: 'Outfit', sans-serif;
+    color: #6d6875;
+    font-size: 3.5em;
+    margin-bottom: 30px;
+    padding-top: 30px;
 }
 
-/* Styles for the links in the navBar */
-#navbarNav a {
-    color: #023e8a;
-    font-size: 1.2rem;
-    font-weight: 400;
-    margin-left: 30px;
-    font-family: 'Montserrat', sans-serif;
+#toolContainer {
+    background-color: #f8f9fa;
+    width: 100%;
 }
 
-/* Styles for the links in the navBar when Hover*/
-#navbarNav a:hover {
-    color: #FCA311;
-    font-weight: 400;
-    transition: all 100ms ease-in;
+#toolSection {
+    padding-top: 30px;
 }
 
-/* Styles for the Image Logo in the nav bar*/
-#mainNavBar #logo img{
-    width: 120px;
-    height: 100px;
-    border-radius: 20%;
-    margin-right: 100px;
+#toolSection:hover .goodExp {
+    color: #bc6c25;
 }
 
-#contactInfo {
-    margin-top: 60px;
+.toolBorder{
+    border: 3px double #dee2e6;
+    border-radius: 22px 22px 22px 22px;
+    box-shadow: 9px 10px 31px 0px rgba(173, 181, 189, 0.9);
+    -webkit-box-shadow: 9px 10px 31px 0px rgba(173, 181, 189, 0.9);
+    -moz-box-shadow: 9px 10px 31px 0px rgba(173, 181, 189, 0.9);
 }
 
-#contactInfo .row {
+.tmp1 {
+    border: 1px solid black;
+}
+
+.toolOption {
+    height: 300px;
     display: flex;
-    align-items: center;
-    margin-bottom: 5px;
-    background-color: #14213d;
-    font-size: 1.2em;
-    color: #e9ecef;
-    height: 50px;
-    border: 1px solid white;
-}
-
-#contactInfo .row:nth-of-type(2n){
-    background-color: #495057;
-}
-
-#contactInfo a{
-    color: #e9ecef;
-}
-
-/* Styles of the Tools Section */
-#toolsBar .row {
-    display: flex;
+    flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
-    color: #14213d;
-    margin-bottom: 25px;
-    font-size: 1.2em;
+    margin-top: 30px;
 }
 
-#toolsBar img{
-    height: 80%;
-    width: 80%;
+.toolLogo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 30px;
 }
 
-#toolsBar h2{
-    margin-bottom: 25px;
-    margin-top: 100px;
-    color: #023e8a;
-    font-weight: 400;
+.toolText {
+    font-family: 'Rajdhani', sans-serif;
+    margin-bottom: 30px;
 }
 
-/* Styles of the About Me Box*/
-#aboutMe {
-    background: rgb(8,10,19);
-    background: linear-gradient(90deg, rgba(8,10,19,1) 4%, rgba(107,110,119,1) 47%, rgba(7,43,101,1) 91%);
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    border: 1px solid #adb5bd;
-    color: #e9ecef;
-    border-radius: 15px;
-    font-weight: 100;
-    line-height: 2.0rem;
-    margin-top: 60px;
+.toolExp {
+    font-size: small;
 }
 
-/* Styles of the Text Highlighted in About Me Box*/
-#aboutMe .textMark {
-    font-weight: 400;
-    font-family: 'Outfit', sans-serif;
-    font-size: 1.4rem;
-    color: #0096c7;
+.toolTitle {
+    font-weight: bolder;
+    color: #264653;
 }
 
-#professionalExperience {
-    background: rgb(8,10,19);
-    background: linear-gradient(90deg, rgba(8,10,19,1) 4%, rgba(107,110,119,1) 47%, rgba(7,43,101,1) 91%);
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    color: #e9ecef;
-    border: 1px solid #adb5bd;
-    border-radius: 15px;
-    font-weight: 300;
-    line-height: 2.0rem;
-    margin-top: 25px;
+#programmingContainer {
+    background: #e9ecef;
+    background: linear-gradient(90deg,#e9ecef 0%, #dee2e6 80%);
+    background: -webkit-linear-gradient(90deg,#e9ecef 0%, #dee2e6 80%);
+    background: -moz-linear-gradient(90deg,#e9ecef 0%, #dee2e6 80%);
+    width: 100%;
 }
 
-.textMarkProfessional {
-    font-weight: 400;
-    font-family: 'Outfit', sans-serif;
-    font-size: 1.1rem;
-    color: #0096c7;
-    margin: 0px 5px;
+.programmingBorder{
+    border: 3px double #ced4da;
+    border-radius: 22px 22px 22px 22px;
+    box-shadow: 20px 18px 10px 6px rgba(173,181,189,0.76);
+    -webkit-box-shadow: 20px 18px 10px 6px rgba(173,181,189,0.76);
+    -moz-box-shadow: 20px 18px 10px 6px rgba(173,181,189,0.76);
+    margin-bottom: 30px;
+    padding-top: 20px;
 }
 
-.textMarkDescription {
-    font-weight: 100;
-    font-family: 'Outfit', sans-serif;
-    font-size: 1.2rem;
+/* Start of the Education classes */
+.universityRow{
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-bottom: 50px;
+    border-left: 5px solid #023e8a;
 }
+
+#educationInfo h3{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #495057;
+}
+
+#educationTitle{
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    color: #0077b6;
+    font-size: 2.5em;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.universityData{
+    line-height: 150%;
+}
+
+.universityImage{
+    width: 90%;
+}
+
+.imguniversity{
+    box-shadow: 24px -14px 18px 4px rgba(108,117,125,0.64);
+    -webkit-box-shadow: 24px -14px 18px 4px rgba(108,117,125,0.64);
+    -moz-box-shadow: 24px -14px 18px 4px rgba(108,117,125,0.64);
+
+    transform: rotate(348deg) translate(-1px,0px);
+    -webkit-transform: rotate(348deg) translate(-1px,0px);
+    -moz-transform: rotate(348deg) translate(-1px,0px);
+
+    border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    border: 3px inset #9a9fb6;
+    width: 90%;
+}
+/* End of the Education Classes */
+
+/* Start of the experience info classes */
+
+#experienceInfo{
+    border-top: 1px solid #dee2e6;
+    box-shadow: -1px -16px 20px 6px rgba(222,226,230,0.75);
+    -webkit-box-shadow: -1px -16px 20px 6px rgba(222,226,230,0.75);
+    -moz-box-shadow: -1px -16px 20px 6px rgba(222,226,230,0.75);
+}
+
+.universityData{
+    line-height: 150%;
+}
+
+.experienceRow{
+    margin-top: 50px;
+    margin-right: 30px;
+    margin-bottom: 50px;
+    border-right: 5px solid #023e8a;
+}
+
+.imgExperience{
+    box-shadow: 24px -14px 18px 4px rgba(108,117,125,0.64);
+    -webkit-box-shadow: 24px -14px 18px 4px rgba(108,117,125,0.64);
+    -moz-box-shadow: 24px -14px 18px 4px rgba(108,117,125,0.64);
+
+    transform: rotate(4deg);
+    -webkit-transform: rotate(4deg);
+    -moz-transform: rotate(4deg);
+
+    border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+     
+    width: 200%;
+}
+
+/* End of the experience info classes */
+
+
+/* Begining of the footer section */
+
+#footerSection{
+    background-color: #415a77;
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    padding-left: 30px;
+
+    box-shadow: -1px -16px 20px 6px rgba(222,226,230,0.75);
+    -webkit-box-shadow: -1px -16px 20px 6px rgba(222,226,230,0.75);
+    -moz-box-shadow: -1px -16px 20px 6px rgba(222,226,230,0.75);
+}
+
+.socialIcon{
+    margin-right: 50px;
+}
+
+.socialIcon a{
+    color: white;
+}
+
+#footerIcons{
+    margin-top: 30px;
+    padding-right: 150px;
+}
+/* End of the footer section */
+
+
+/* font-family: 'Comfortaa', cursive;
+font-family: 'Rajdhani', sans-serif;
+font-family: 'Roboto Condensed', sans-serif; */
