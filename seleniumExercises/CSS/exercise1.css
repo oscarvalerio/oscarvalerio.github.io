@@ -1,0 +1,18 @@
+#mainRow {
+    height: 90vh;
+}
+
+#leftPane {
+    background: #0f1018;
+    background: linear-gradient(90deg, #0f1018 0%, #242a6e 80%);
+    background: -webkit-linear-gradient(90deg, #0f1018 0%, #242a6e 80%);
+    background: -moz-linear-gradient(90deg, #0f1018 0%, #242a6e 80%);
+}
+
+#loginRow{
+    width: 40%;
+}
+
+.tmp{
+    border: 1px solid red;
+}
