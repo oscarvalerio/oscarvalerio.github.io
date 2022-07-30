@@ -9,10 +9,55 @@
     background: -moz-linear-gradient(90deg, #0f1018 0%, #242a6e 80%);
 }
 
-#loginRow{
+#loginRow {
     width: 40%;
 }
 
-.tmp{
+.formStyle {
+    border-radius: 17px 17px 17px 17px;
+    -webkit-border-radius: 17px 17px 17px 17px;
+    -moz-border-radius: 17px 17px 17px 17px;
+    border: 2px solid rgba(92, 92, 112, 0.93);
+
+    box-shadow: -21px 21px 5px 2px rgba(0, 0, 0, 0.58);
+    -webkit-box-shadow: -21px 21px 5px 2px rgba(0, 0, 0, 0.58);
+    -moz-box-shadow: -21px 21px 5px 2px rgba(0, 0, 0, 0.58);
+}
+
+.paragraphText{
+    color: #001d3d;
+    font-size: 1.8em;
+    font-family: 'Source Sans Pro', sans-serif; 
+}
+
+.paragraphTextSmall{
+    color: #343a40;
+    font-size: 1.2em;
+    font-family: 'Source Sans Pro', sans-serif; 
+}
+
+.paragraphHighlight{
+    font-weight: bold;
+}
+
+.fieldsText{
+    font-weight: 200;
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.3;
+    color: #adb5bd;
+}
+
+.buttonStyle{
+    background-color:#033f63;
+    font-family: 'Inconsolata', monospace;
+    color: white;
+    margin-top: 40px;
+    width: 30%;
+}
+
+.tmp {
     border: 1px solid red;
 }
+
+/* font-family: 'Source Sans Pro', sans-serif; 
+font-family: 'Inconsolata', monospace; */
