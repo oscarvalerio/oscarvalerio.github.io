@@ -52,6 +52,7 @@
     font-family: 'Inconsolata', monospace;
     color: white;
     margin-top: 40px;
+    margin-left: 2rem;
     width: 30%;
 }
 
@@ -59,10 +60,6 @@
     font-family: 'Source Sans Pro', sans-serif; 
     color: #242a6e;
     font-size: 0.9em;
-}
-
-.invField{
-    visibility: hidden;
 }
 
 .tmp {
