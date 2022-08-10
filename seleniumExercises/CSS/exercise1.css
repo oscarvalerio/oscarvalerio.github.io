@@ -40,6 +40,13 @@
     font-weight: bold;
 }
 
+.instructionsText{
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.5em;
+    color: white;
+    margin-top: 3em;
+}
+
 .fieldsText{
     font-weight: 200;
     font-family: 'Inconsolata', monospace;
@@ -62,8 +69,17 @@
     font-size: 0.9em;
 }
 
-.tmp {
-    border: 1px solid red;
+.loginCodeClass{
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.5em;
+    color: #033f63;
+    font-weight: bold;
+}
+
+li{
+    margin-left: 2em;
+    margin-bottom: 1.5em;
+    font-family: 'Inconsolata', monospace;
 }
 
 /* font-family: 'Source Sans Pro', sans-serif; 

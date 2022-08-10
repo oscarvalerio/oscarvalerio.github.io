@@ -12,9 +12,9 @@ function doForm(e) {
     e.preventDefault();
     const usr = catchValue();
     if(usr==rndm){
-        console.log("welcome "+usr);
+        generateLoginMessage("You gave me the correct username and password");
     } else{
-        console.log("sorry you're not allowed to login")
+        generateLoginMessage("Sorry, username or password is incorrect");
     }
     
 }
@@ -27,10 +27,15 @@ function catchValue() {
 
 // Generates a random username and then returns the value
 function generateRandomMessage() {
-    const alrtField = document.querySelector("#textAlert");
+    const alrtField = document.querySelector("#loginCode");
     rndm = Math.floor(Math.random() * 100000);
-    alrtField.innerText = `The username you have to type is:  ${rndm}`;
+    alrtField.innerText = `${rndm}`;
 }
 
+// Generates a message depending on the username is correct or not
+function generateLoginMessage(msg) {
+    const alrtField = document.querySelector("#loginMessage");
+    alrtField.innerText = msg;
+}
 
 formas.addEventListener("submit", doForm);
